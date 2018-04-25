@@ -1,0 +1,21 @@
+{
+  "name": "qzzupload",
+  "version": "1.0.0",
+  "description": "上传图片到 qunarzz CDN",
+  "bin": {
+    "qzzupload": "bin/qzzupload"
+  },
+  "author": "xbf321@gmail.com",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/xbf321/qzzupload.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "colors": "^1.2.1",
+    "form-data": "^2.3.2",
+    "glob": "^7.1.2",
+    "request": "^2.85.0"
+  }
+}
