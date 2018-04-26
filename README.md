@@ -31,5 +31,8 @@ npm install -g qzzupload
 
 ```bash
 # 进入到图片目录
-qzzupload
+qzzupload go 
+
+# 默认只扫描根目录，如果需要递归上传，请增加 -r 参数
+qzzupload go -r
 ```

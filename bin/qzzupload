@@ -2,7 +2,21 @@
 
 'use strict';
 
-var cli = require('../lib/cli'),
-    cmd = process.argv[2];
+var program = require('commander');
+program
+    .version(require('../package').version)
+    .usage('<command> [options]');
 
-cli.run(cmd);
+program
+    .command('go')
+    .description('上传图片')
+    .option('-r, --recursive', '扫描当前文件下所有图片')
+    .action((cmd) => {
+        require('../lib/go')(cmd)
+    });
+
+program.parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+    program.outputHelp();
+}
