@@ -8,11 +8,11 @@ program
     .usage('<command> [options]');
 
 program
-    .command('go')
+    .command('push <pathname>')
     .description('上传图片')
     .option('-r, --recursive', '扫描当前文件下所有图片')
-    .action((cmd) => {
-        require('../lib/go')(cmd)
+    .action((pathname, cmd) => {
+        require('../lib/push')(pathname, cmd)
     });
 
 program.parse(process.argv);
