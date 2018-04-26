@@ -1,6 +1,6 @@
 {
   "name": "qzzupload",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "上传图片到 qunarzz CDN",
   "bin": {
     "qzzupload": "bin/qzzupload"
@@ -9,6 +9,9 @@
   "repository": {
     "type": "https",
     "url": "https://github.com/xbf321/qzzupload.git"
+  },
+  "engines": {
+    "node": ">=8.6.0"
   },
   "license": "ISC",
   "dependencies": {
