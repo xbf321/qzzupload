@@ -30,13 +30,22 @@ npm install -g qzzupload
 ## 使用
 
 ```bash
-# 上传当前目录
+# 上传当前目录文件
 qzzupload push .
 
-# 上传指定目录
+# 上传指定目录文件
 qzzupload push /a/b/c
+
+# 上传指定文件
+qzzupload push ./abc.jpg
+qzzupload push abc.jpg
+qzzupload push /a/b/c.jpg
 
 # 默认只扫描根目录，如果需要递归上传，请增加 -r 参数
 qzzupload push . -r
 qzzupload push /a/b/c -r
 ```
+
+## 上传白名单
+
+['*.jpg', '*.png', '*.gif', '*.jpeg', '*.mp4']
