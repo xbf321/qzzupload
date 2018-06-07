@@ -1,6 +1,6 @@
 {
   "name": "qzzupload",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "上传图片到 qunarzz CDN",
   "bin": {
     "qzzupload": "bin/qzzupload"
